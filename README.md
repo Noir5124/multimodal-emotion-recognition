@@ -28,6 +28,30 @@ The system supports:
 - FastAPI backend
 - evaluation graph generation for reports and GitHub documentation
 
+## Dataset Sources
+
+### Facial emotion data
+
+- **FER2013 (Kaggle competition page):** [Challenges in Representation Learning: Facial Expression Recognition Challenge](https://www.kaggle.com/competitions/challenges-in-representation-learning-facial-expression-recognition-challenge)
+- **FER+ label file repository:** [Microsoft FERPlus](https://github.com/microsoft/FERPlus)
+- **FER+ label CSV used in notebook:** [fer2013new.csv](https://raw.githubusercontent.com/microsoft/FERPlus/master/fer2013new.csv)
+
+Usage in this project:
+
+- base images come from `fer2013.csv`
+- improved labels come from FER+
+- final facial classes kept: `angry`, `fear`, `happy`, `sad`, `surprise`
+
+### Text emotion data
+
+- **Emotion dataset:** [dair-ai/emotion on Hugging Face](https://huggingface.co/datasets/dair-ai/emotion)
+
+Usage in this project:
+
+- notebook uses `train.txt`, `val.txt`, and `test.txt`
+- labels were remapped into shared classes for fusion
+- removed text class: `love`
+
 ## Label Alignment
 
 To make both models compatible, labels were normalized into the same final classes.
