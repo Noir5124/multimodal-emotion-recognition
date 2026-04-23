@@ -1,0 +1,11 @@
+{
+  "output_dir": "C:\\Users\\HP\\Desktop\\caveman\\emotion_recognition_pipeline\\evaluation_graphs",
+  "files": [
+    "evaluation_snapshot.png",
+    "summary_metrics_grouped.png",
+    "summary_metrics_heatmap.png",
+    "per_class_metrics.png",
+    "confusion_matrices.png",
+    "training_curves.png"
+  ]
+}
