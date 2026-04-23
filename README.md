@@ -4,7 +4,6 @@ Multimodal emotion recognition pipeline combining facial expression analysis and
 
 **Authors:** Dylan Marshall, Chaitanya Shirpurkar, Darshan Agrawal
 
-![Evaluation Overview](docs/assets/graphs_overview.png)
 
 ## Overview
 
