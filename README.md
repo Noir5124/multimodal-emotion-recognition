@@ -28,6 +28,21 @@ The system supports:
 - FastAPI backend
 - evaluation graph generation for reports and GitHub documentation
 
+## Training Notebook
+
+The complete Colab workflow for preprocessing, training, evaluation, and artifact export is preserved in:
+
+- [DL-emotion.ipynb](notebooks/DL-emotion.ipynb)
+
+This notebook contains:
+
+- FER2013 + FER+ preprocessing
+- text preprocessing and label remapping
+- facial model training
+- text model training
+- evaluation metric export
+- deployment artifact packaging
+
 ## Dataset Sources
 
 ### Facial emotion data
@@ -132,27 +147,30 @@ flowchart LR
 
 ```text
 emotion_recognition_pipeline/
-├─ emotion_pipeline/
-│  ├─ artifacts.py
-│  ├─ facial.py
-│  ├─ fusion.py
-│  ├─ stability.py
-│  └─ text.py
-├─ docs/
-│  ├─ assets/
-│  ├─ GITHUB_PUBLISH.md
-│  ├─ RESULTS.md
-│  └─ SETUP.md
-├─ evaluation_graphs/
-├─ api_server.py
-├─ demo_runtime.py
-├─ generate_evaluation_graphs.py
-├─ gradio_app.py
-├─ multimodal_realtime.py
-├─ predict.py
-├─ realtime_camera.py
-├─ streamlit_app.py
-└─ requirements.txt
+|- emotion_pipeline/
+|  |- artifacts.py
+|  |- facial.py
+|  |- fusion.py
+|  |- stability.py
+|  \- text.py
+|- docs/
+|  |- assets/
+|  |- GITHUB_PUBLISH.md
+|  |- RESULTS.md
+|  \- SETUP.md
+|- notebooks/
+|  \- DL-emotion.ipynb
+|- evaluation_graphs/
+|- paper_overleaf/
+|- api_server.py
+|- demo_runtime.py
+|- generate_evaluation_graphs.py
+|- gradio_app.py
+|- multimodal_realtime.py
+|- predict.py
+|- realtime_camera.py
+|- streamlit_app.py
+\- requirements.txt
 ```
 
 ## Quick Start
